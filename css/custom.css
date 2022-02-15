@@ -1,0 +1,261 @@
+.filter {
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 15px rgb(0 0 0 / 15%);
+       -moz-box-shadow: 1px 1px 15px rgb(0 0 0 / 15%);
+            box-shadow: 1px 1px 15px rgb(0 0 0 / 15%);
+    padding:  20px;
+    display: none;
+    margin-bottom: 25px;
+}
+.filter.active {
+    display: block;
+}
+.filterColors {
+    width: 300px;
+}
+.filterColors h5 {
+    color: #676767;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.filterColorsInput {
+    position: absolute;
+    opacity: 0;
+}
+.filterColorsImg {
+    width: 22px;
+    height: 22px;
+    overflow: hidden;
+    margin-right: 5px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 2px 2px 7px rgb(0 0 0 / 10%);
+       -moz-box-shadow: 2px 2px 7px rgb(0 0 0 / 10%);
+            box-shadow: 2px 2px 7px rgb(0 0 0 / 10%);
+}
+.filterColorsLabel {
+    cursor: pointer;
+    color: #676767;
+    font-size: 13px;
+    margin-bottom: 5px;
+    width: 50%;
+    padding-right: 5px;
+}
+.filterColorsLabel span {
+    width: 75%;
+}
+/* .filterColorsLabel:nth-child(odd) {
+    margin-right: 20px;
+} */
+.filterColorsLabel input:checked ~ .filterColorsImg {
+    border: 1px solid #61c100;
+}
+.filterParametrs {
+    width: 100%;
+    max-width: 66%;
+}
+.filterParametrsRange input,
+.filterParametrsItemTitle {
+    -webkit-border-radius: var(--radius-1);
+       -moz-border-radius: var(--radius-1);
+            border-radius: var(--radius-1);
+    position: relative;
+    padding: 0 14px;
+    width: 100%;
+    height: 36px;
+    font: 400 15px 'Open Sans',sans-serif;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    text-shadow: none;
+    color: #686868;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.filterParametrsItemTitle:after {
+    content: url(../img/arrow-filter.svg);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.filterParametrsItem.active .filterParametrsItemTitle:after  {    
+    top: 10px;
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.filterParametrsRange input {
+    border: 0;
+}
+.filterParametrsRange {
+    -webkit-border-radius: var(--radius-1);
+    -moz-border-radius: var(--radius-1);
+         border-radius: var(--radius-1);
+    border: 1px solid #e0e0e0;
+    position: relative;
+}
+.filterParametrsRange:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #e0e0e0;
+}
+.filterParametrsRange span,
+.filterParametrsRange .filterParametrsItemTitle {
+    display: none;
+}
+.filterParametrsItemDropdown {
+    height: 0;
+    opacity: 0;
+}
+.filterParametrsItem {
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 14px;
+}
+.filterParametrsRange input {
+    width: 150px;
+}
+.filterBottom {
+    padding: 18px 0;
+}
+.filterBtn {
+    width: 300px;
+    padding: 20px 0;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.filterBottom a.more {
+    margin-right: auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+.filterBottom a.more span {
+    margin-right: 10px;
+    text-decoration: underline;
+}
+.filterDrop img {
+    margin-left: 10px;
+}
+.catalogNavBtnFilter span,
+.filterDrop span {
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    color: #fff;
+    margin-right: 15px;
+}
+.catalogNavBtnFilter span {
+    position: absolute;
+    right: -10px;
+    top: -8px;
+}
+a.filterSave {
+    margin-right: 30px;
+    color: #61c100;
+    letter-spacing: 0.03em;
+}
+.filterSave img {
+    margin-left: 4px;
+}
+
+.filterWrap {
+    height: 195px;
+    overflow: hidden;
+}
+.filterWrap.active {
+    height: auto;
+    -webkit-transition: ease .3s all;
+    -o-transition: ease .3s all;
+    -moz-transition: ease .3s all;
+    transition: ease .3s all;
+}
+.filterColorsWrap {
+    height: 160px;
+}
+.filterBottom a.more.active img {
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.Scroll {
+    overflow: auto;
+}
+.Scroll::-webkit-scrollbar {
+    width: 3px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #f5f4f4;
+}
+/* ползунок скроллбара */
+.Scroll::-webkit-scrollbar-thumb {
+    background-color: #61c100;
+    -webkit-border-radius: 9em;
+            border-radius: 9em;
+    -webkit-box-shadow: inset 1px 1px 10px #61c100;
+            box-shadow: inset 1px 1px 10px #61c100;
+}
+
+.filterParametrsItemDropdown {
+    position: absolute;
+    z-index: -1;
+    margin-top: 10px;
+    width: auto;
+    padding: 20px 12px 20px 18px;
+    white-space: nowrap;
+    color: #000;
+    background: #fff;
+    -webkit-box-shadow: 0 0 25px rgb(0 0 0 / 12%);
+    -moz-box-shadow: 0 0 25px rgb(0 0 0 / 12%);
+         box-shadow: 0 0 25px rgb(0 0 0 / 12%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+         border-radius: 5px;
+}
+.filterParametrsItem.active .filterParametrsItemDropdown {
+    opacity: 1;
+    height: auto;
+    z-index: 50;
+    max-height: 207px;
+}
+.filterParametrsItemDropdown input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.filterParametrsItemDropdown span::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+    border: 1px solid #d7d7d7;
+}
+.filterParametrsItemDropdown input:checked~span:before {
+    background: url(../img/checked-filter.png) center center no-repeat;
+}
+.filterParametrsItemDropdown label {
+    width: 100%;
+    cursor: pointer;
+}
+.filterParametrsItemDropdown label:not(:last-child) {
+    margin-bottom: 5px;
+}
+.filterParametrsItemDropdownWrap {
+    overflow: auto;
+    width: 100%;
+}
